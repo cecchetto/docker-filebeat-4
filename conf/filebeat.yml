@@ -1,0 +1,8 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+    - /tmp/test.log
+
+output.logstash:
+  hosts: ["10.0.0.1:5000"]
+
